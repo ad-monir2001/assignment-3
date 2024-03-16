@@ -87,7 +87,6 @@ ul li a {
 }
 
 .hero__texts h1 {
-  /* font-size: 5rem; */
   color: var(--color-soft-gray);
 }
 
@@ -285,4 +284,71 @@ ul li a {
 .work__container img:hover {
   opacity: 0.6;
   cursor: pointer;
+}
+
+/** style rule for skills section **/
+
+.skills{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #f1f1f1;
+  padding: 3rem 1rem;
+}
+
+.skill__text{
+  max-width: 400px;
+}
+
+.skill__text h2{
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+.skill__text p{
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.skill__meter i{
+  margin-right: 10px;
+}
+
+meter{
+  width: 100%;
+  height: 60px;
+}
+
+
+/** style rule for footer **/
+
+footer{
+  text-align: center;
+  background-color: #112a46;
+  color: #f1f1f1;
+  padding: 4rem 0;
+}
+
+footer a{
+  color: #f44336;
+}
+
+.top__bar{
+  background-color: #ffffff;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.footer__icon{
+  margin: 1rem 0;
+}
+
+.footer__icon{
+  font-size: 1.5rem;
+}
+
+.footer__icon i:hover{
+  cursor: pointer;
+  opacity: .6;
 }
