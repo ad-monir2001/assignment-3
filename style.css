@@ -60,15 +60,15 @@ ul li {
   padding: 1rem;
 }
 
+
+li:hover {
+  cursor: pointer;
+  background-color: #D0E6FF;
+}
+
 ul li a {
   color: #000000;
 }
-
-li:hover {
-  background-color: red;
-  cursor: pointer;
-}
-
 /** Style rule for hero section **/
 
 .hero {
@@ -169,25 +169,74 @@ li:hover {
   margin: 1rem 0;
 }
 
+.about2__btn:hover{
+  cursor: pointer;
+  color: white;
+  background-color: #112A46;
+}
+
 /** Style rule for about2 section **/
 
 #team{
   text-align: center;
   padding: 4rem 1rem;
 }
+
+#team h2{
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+.team__descriptiv{
+  font-size: 1.3rem;
+  font-weight: 400;
+}
 .team__container{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
+  margin: 2rem 0;
 }
 .member{
   border-radius: 4px;
-  width: 450px;
   border: none;
   box-shadow: 2px 2px 2px 2px var(--color-gray);
 }
 
 .member img{
-  width: 450px;
-  height: 450px;
+  width: 350px;
+  height: 350px;
 
+}
+
+.member h2{
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.position{
+  color: #757575;
+}
+
+.member p{
+  line-height: 25px;
+  margin: 1rem 0;
+}
+
+.member__btn{
+  display: inline-block;
+  padding: .8rem;
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 1rem;
+  width: 90%;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.member__btn:hover{
+  cursor: pointer;
+  color: white;
+  background-color: #112A46;
 }
