@@ -232,6 +232,7 @@ ul li a {
 }
 
 .member img {
+  width: 100%;
   height: 350px;
 }
 
