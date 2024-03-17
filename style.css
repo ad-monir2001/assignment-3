@@ -43,17 +43,21 @@ a {
 /** style rule for nav bar **/
 
 nav .logo img {
-  width: 60px;
+  width: 50px;
 }
 
 nav {
   justify-content: space-between;
   background-color: var(--color-soft-gray);
-  padding: 1rem;
+  padding: .9rem;
   position: fixed;
   width: 100%;
   box-shadow: 0 1px 1px 1px var(--color-light-gray);
   z-index: 999;
+}
+
+#mobile__menu {
+  display: none;
 }
 
 ul li {
@@ -71,22 +75,20 @@ ul li a {
 }
 /** Style rule for hero section **/
 
-.hero{
+.hero {
   position: relative;
 }
 
-.hero img{
+.hero img {
   width: 100%;
   height: 100vh;
 }
 
-.hero__texts{
+.hero__texts {
   position: absolute;
   top: 50%;
   left: 10%;
-
 }
-
 
 .hero__texts h1 {
   color: var(--color-soft-gray);
@@ -95,24 +97,23 @@ ul li a {
   margin-bottom: 1rem;
 }
 
-.hero__texts p{
+.hero__texts p {
   color: white;
   font-size: 1.2rem;
   margin: 2.5rem 0;
 }
 
-.hero__btn{
-  padding: 1rem ;
+.hero__btn {
+  padding: 1rem;
   font-family: var(--font);
   font-size: 1.2rem;
-  opacity: .8;
+  opacity: 0.8;
   cursor: pointer;
   display: inline-block;
 }
 
-.hero__icons{
+.hero__icons {
   position: relative;
-  /* margin: 2.5rem; */
   bottom: 2.5rem;
   left: 2.5;
   color: #616161;
@@ -317,80 +318,79 @@ ul li a {
 
 /** style rule for skills section **/
 
-.skills{
+.skills {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: #f1f1f1;
   padding: 3rem 1.5rem;
 }
 
-.skill__text{
+.skill__text {
   max-width: 400px;
 }
 
-.skill__text h2{
+.skill__text h2 {
   font-weight: 400;
   margin: 2rem 0;
 }
 
-.skill__text p{
+.skill__text p {
   font-weight: 400;
   line-height: 26px;
 }
 
-.skill__meter i{
+.skill__meter i {
   margin-right: 10px;
 }
 
-meter{
+meter {
   width: 100%;
   height: 60px;
   position: relative;
 }
 
 meter::after {
-  top:-39px;
-  left:150px;
-  position:relative;
+  top: -39px;
+  left: 150px;
+  position: relative;
   color: white;
- }
+}
 
-.photography::after{
-  content : '90%';
+.photography::after {
+  content: "90%";
 }
-.web::after{
-  content : '80%';
+.web::after {
+  content: "80%";
 }
-.photoshop::after{
-  content : '70%';
+.photoshop::after {
+  content: "70%";
 }
- 
+
 meter::-webkit-meter-optimum-value {
   background: #757575;
 }
 
-
 /** style rule for pricing section **/
 
-#pricing{
+#pricing {
   text-align: center;
   background-color: #757575;
 }
 
-#pricing h1{
+#pricing h1 {
   text-transform: uppercase;
   color: white;
   padding: 5rem 0 2rem 0;
   font-weight: 400;
 }
 
-#pricing > p{
+#pricing > p {
   color: white;
   font-size: 1.1rem;
   font-weight: 500;
 }
 
-.pricing__items{
+.pricing__items {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -398,41 +398,43 @@ meter::-webkit-meter-optimum-value {
   padding: 4rem 1rem;
 }
 
-.basic h2, .premium h2{
+.basic h2,
+.premium h2 {
   color: white;
   background-color: #000000;
   padding: 2rem 7rem;
   font-weight: 400;
 }
 
-.pro h2{
+.pro h2 {
   background-color: #f44336;
   color: white;
   font-weight: 400;
   padding: 3rem 7rem;
 }
 
-.pricing__text p , .price{
+.pricing__text p,
+.price {
   background-color: whitesmoke;
   border-bottom: 1px solid #757575;
-  padding: 1rem ;
+  padding: 1rem;
 }
 
-.signup__btn{
+.signup__btn {
   background-color: #9e9e9e;
   padding: 1rem;
 }
 
-.digit{
+.digit {
   font-size: 2rem;
   padding: 1rem 0;
 }
 
-.price span{
+.price span {
   color: #757575;
 }
 
-.price__btn{
+.price__btn {
   background-color: #000000;
   color: #f1f1f1;
   padding: 1rem 2rem;
@@ -443,40 +445,40 @@ meter::-webkit-meter-optimum-value {
   cursor: pointer;
 }
 
-.price__btn:hover{
+.price__btn:hover {
   background-color: #112a46;
   color: #ffffff;
 }
 
 /** style rule for contact section **/
 
-#contract h1{
+#contract h1 {
   text-align: center;
   padding: 3rem 0;
   font-weight: 400;
 }
 
-#contract > p{
+#contract > p {
   text-align: center;
   font-size: 1.1rem;
   margin-bottom: 5rem;
-
 }
 
-.address{
+.address {
   padding-left: 1.5rem;
 }
 
-form{
+form {
   padding-left: 1.5rem;
   padding-bottom: 4rem;
 }
 
-#contract i{
+#contract i {
   margin-right: 1rem;
 }
 
-input, textarea{
+input,
+textarea {
   display: block;
   width: 80%;
   padding: 1rem;
@@ -488,24 +490,24 @@ input, textarea{
   resize: none;
 }
 
-iframe{
+iframe {
   padding: 2rem;
 }
 
 /** style rule for footer **/
 
-footer{
+footer {
   text-align: center;
   background-color: #112a46;
   color: #f1f1f1;
   padding: 4rem 0;
 }
 
-footer a{
+footer a {
   color: #f44336;
 }
 
-.top__bar{
+.top__bar {
   background-color: #ffffff;
   font-size: 1.2rem;
   padding: 1rem 2rem;
@@ -513,15 +515,101 @@ footer a{
   margin-bottom: 1rem;
 }
 
-.footer__icon{
+.footer__icon {
   margin: 1rem 0;
 }
 
-.footer__icon{
+.footer__icon {
   font-size: 1.5rem;
 }
 
-.footer__icon i:hover{
+.footer__icon i:hover {
   cursor: pointer;
-  opacity: .6;
+  opacity: 0.6;
+}
+
+/* ! Media query design */
+
+@media screen and (max-width: 428px) {
+  nav .logo img {
+    width: 40px;
+  }
+  nav {
+    padding: .5rem;
+  }
+  .menu__items {
+    display: none;
+  }
+  #mobile__menu {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .hero__texts {
+    top: 30%;
+  }
+
+  .hero__texts h1 {
+    font-size: 3rem;
+  }
+
+  .hero__texts p {
+    font-size: 1.2rem;
+  }
+
+  .about__containers,
+  .about2 {
+    display: inline;
+  }
+
+  .about2 {
+    background: none;
+  }
+
+  .about2__img img {
+    width: 100%;
+  }
+  .about2__img {
+    margin-right: 0;
+    padding: 1rem;
+  }
+
+  .team__container {
+    display: inline;
+  }
+  .member {
+    margin: 2rem 0;
+    box-shadow: none;
+    border: 1px solid #757575;
+  }
+  .work__review {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .work__container {
+    display: inline;
+  }
+  .skills {
+    display: inline;
+    background: none;
+  }
+  .skill__text {
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+  }
+  .skill__meter{
+    padding: 0 1rem;
+  }
+  .pricing__items {
+    display: inline;
+  }
+  .basic,.pro,.premium{
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+  }
+  iframe{
+    width: 374px;
+  }
 }
