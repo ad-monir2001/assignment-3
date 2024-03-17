@@ -321,16 +321,24 @@ meter{
 }
 
 meter::after {
-  content : attr(value);
   top:-39px;
-  left:200px;
+  left:150px;
   position:relative;
   color: white;
  }
 
+.photography::after{
+  content : '90%';
+}
+.web::after{
+  content : '80%';
+}
+.photoshop::after{
+  content : '70%';
+}
  
 meter::-webkit-meter-optimum-value {
-  background: #757575; /* Green */
+  background: #757575;
 }
 
 
@@ -453,7 +461,7 @@ input, textarea{
 }
 
 iframe{
-  margin: 0 auto;
+  padding: 2rem;
 }
 
 /** style rule for footer **/
