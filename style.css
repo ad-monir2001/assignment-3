@@ -530,6 +530,9 @@ footer a {
 
 /* ! Media query design */
 
+
+/** mobile responsive **/
+
 @media screen and (max-width: 428px) {
   nav .logo img {
     width: 40px;
@@ -611,5 +614,19 @@ footer a {
   }
   iframe{
     width: 374px;
+  }
+}
+
+/** tab responsive **/
+
+@media screen and (max-width: 834px) {
+  .about2__img img {
+    width: 100%;
+  }
+  .team__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .work__container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
